@@ -1,0 +1,105 @@
+@import "tailwindcss";
+@import "primeicons/primeicons.css";
+
+:root {
+  --akan-primary: #6366f1;
+  --akan-primary-hover: #4f46e5;
+  --akan-bg: #0f172a;
+  --akan-surface: #1e293b;
+  --akan-surface-hover: #334155;
+  --akan-border: #334155;
+  --akan-text: #f1f5f9;
+  --akan-text-muted: #94a3b8;
+  --akan-success: #22c55e;
+  --akan-warning: #f59e0b;
+  --akan-danger: #ef4444;
+  --akan-info: #3b82f6;
+
+  --sidebar-width: 260px;
+  --topbar-height: 56px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--akan-bg);
+  color: var(--akan-text);
+  min-height: 100vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--akan-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--akan-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--akan-text-muted);
+}
+
+/* PrimeNG Dark Overrides */
+.p-datatable .p-datatable-thead > tr > th {
+  background: var(--akan-surface) !important;
+  color: var(--akan-text-muted) !important;
+  border-color: var(--akan-border) !important;
+}
+
+.p-datatable .p-datatable-tbody > tr {
+  background: var(--akan-surface) !important;
+  color: var(--akan-text) !important;
+}
+
+.p-datatable .p-datatable-tbody > tr:hover {
+  background: var(--akan-surface-hover) !important;
+}
+
+/* Badge styles */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.badge-hot {
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+}
+
+.badge-warm {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fcd34d;
+}
+
+.badge-cold {
+  background: rgba(59, 130, 246, 0.15);
+  color: #93c5fd;
+}
+
+.badge-won {
+  background: rgba(34, 197, 94, 0.15);
+  color: #86efac;
+}
+
+.badge-lost {
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+}
